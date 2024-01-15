@@ -1,0 +1,126 @@
+body {
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.circles-container {
+    display: flex;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+    border: 2px groove black;
+}
+
+.circle.red {
+    background-color: red;
+}
+
+.circle.yellow {
+    background-color: yellow;
+}
+
+.circle.green {
+    background-color: green;
+}
+
+.start-button,
+.reset-button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.xang-xe {
+    margin-bottom: 10px;
+}
+
+.xang {
+    width: 150px;
+    height: 10px;
+    background-color: green;
+}
+
+p {
+    margin: 0;
+}
+
+.street {
+    display: flex;
+    height: 360px;
+    background-image: url('https://www.hoerrsblacktop.com/wp-content/uploads/2021/02/asphalt-texture-background-picture-id1042084638.jpg');
+}
+
+.xe {
+    width: 100%;
+}
+
+.lane {
+    height: 50%;
+    display: flex;
+}
+
+
+
+
+.anhxe {
+    margin: 20px;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) infinite,
+               moveCarAnimation 4s linear infinite; /* Thời gian và kiểu chuyển động có thể được điều chỉnh */
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(0,-1px, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(0, 1px, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(0, -1px,0);
+    }
+
+    40%, 60% {
+        transform: translate3d(0, 1px, 0);
+    }
+}
+
+.vachdich {
+    width: 25px;
+    margin-right: 50px;
+    background-color: yellow;
+}
+
+.btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.reset-button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+}
